@@ -52,14 +52,22 @@ export default function CTA() {
                 <span className="text-gray-700">No obligation consultation</span>
               </li>
             </ul>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-full px-6 py-3 bg-main text-white font-medium rounded-lg flex items-center justify-center gap-2 hover:bg-main transition-colors"
-            >
-              Book Call
-              <ArrowRight size={18} />
-            </motion.button>
+
+            <a
+              href="https://calendly.com/ash-theredthreadlabs/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            > 
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-full px-6 py-3 bg-main text-white font-medium rounded-lg flex items-center justify-center gap-2 hover:bg-main transition-colors"
+              >
+                Book Call
+                <ArrowRight size={18} />
+              </motion.button>
+            </a>
+
           </motion.div>
 
           <motion.div
@@ -74,7 +82,7 @@ export default function CTA() {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">View Offer Breakdown</h3>
             <p className="text-gray-600 mb-6">
-              Get a detailed overview of our services, process, and pricing without scheduling a call.
+              Get a detailed overview of our services, process, and pricing without scheduling a call.(No Obligation)
             </p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-3">
@@ -93,7 +101,7 @@ export default function CTA() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-full px-6 py-3 bg-white text-main font-medium rounded-lg flex items-center justify-center gap-2 border border-main hover:bg-main transition-colors"
+              className="w-full px-6 py-3 bg-white text-main font-medium rounded-lg flex items-center justify-center gap-2 border border-main hover:bg-main hover:text-white transition-colors"
             >
               View Offer
               <ArrowRight size={18} />

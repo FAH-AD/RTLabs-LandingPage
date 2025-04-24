@@ -10,16 +10,19 @@ export default function CoreOffer() {
       title: "Buyer Journey Audit",
       description:
         "We analyze every touchpoint in your funnel to identify conversion blockers and opportunities for improvement.",
+        link:"/FunnelAudit.pdf"
     },
     {
       icon: <Video className="w-10 h-10 text-convert" />,
       title: "TOFU Video Ads & Trust Content",
       description: "Scroll-stopping creative that captures attention and builds trust with your target audience.",
+       link:"/portfolio_ash"
     },
     {
       icon: <Layout className="w-10 h-10 text-convert" />,
       title: "Landing Page Revamps & Performance Hooks",
       description: "Conversion-focused design and copy that turns visitors into customers.",
+        link:"/portfolio_fahad"
     },
   ]
 
@@ -73,9 +76,16 @@ export default function CoreOffer() {
               <div className="mb-6">{service.icon}</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
               <p className="text-gray-600 mb-6">{service.description}</p>
+              <a
+              href={service.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <motion.div whileHover={{ x: 5,   }} className="text-red-700 font-medium flex hover:cursor-pointer items-center gap-2">
                 Learn more <ArrowRight size={16} />
               </motion.div>
+
+              </a>
             </motion.div>
           ))}
         </motion.div>

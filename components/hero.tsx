@@ -68,6 +68,12 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="flex flex-col sm:flex-row justify-center gap-4"
         >
+
+<a
+              href="https://calendly.com/ash-theredthreadlabs/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            > 
           <motion.button
             whileHover={{
              scale: 1.05,
@@ -83,6 +89,7 @@ export default function Hero() {
             {/* Hover background shine */}
             <span className="absolute inset-0 bg-gradient-to-r from-[#75dab4] to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg pointer-events-none" />
           </motion.button>
+          </a>
 
           <motion.button
             whileHover={{ scale: 1.05 }}

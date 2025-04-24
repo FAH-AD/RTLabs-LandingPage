@@ -27,15 +27,7 @@ export default function Footer() {
               and conversion-focused design.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook size={20} />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter size={20} />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram size={20} />
-              </Link>
+              
               <Link href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </Link>
@@ -77,29 +69,22 @@ export default function Footer() {
                   href="mailto:hello@redthreadlabs.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  hello@redthreadlabs.com
+                  ash@theredthreadlabs.store
                 </Link>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-convert" />
                 <Link href="tel:+1234567890" className="text-gray-400 hover:text-white transition-colors">
-                  (123) 456-7890
+                  (+32) 471 31 35 54
                 </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm mb-4 md:mb-0">&copy; {currentYear} RedThreadLabs. All rights reserved.</p>
-          <div className="flex space-x-6">
-            <Link href="#" className="text-gray-500 hover:text-white text-sm transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-gray-500 hover:text-white text-sm transition-colors">
-              Terms of Service
-            </Link>
-          </div>
+        <div className="border-t border-gray-800 pt-8 flex  md:flex-row justify-center items-center">
+          <p className="text-gray-500 text-sm text-center mb-4 md:mb-0">&copy; {currentYear} RedThreadLabs. All rights reserved.</p>
+         
         </div>
       </div>
     </footer>

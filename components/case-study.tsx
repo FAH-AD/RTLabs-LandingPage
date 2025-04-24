@@ -50,10 +50,10 @@ export default function CaseStudy() {
             className="space-y-6"
           >
             <div className="inline-block px-3 py-1 bg-convert text-white text-sm font-medium rounded-md">
-              Skincare Brand
+              BondiBoost
             </div>
             <h3 className="text-2xl font-bold text-gray-900">
-              "Red Thread's audit alone helped us cut our CPA by 21% in 3 weeks."
+              "Red Thread's audit alone helped us cut our CPA by 33%."
             </h3>
             <p className="text-gray-700">— BondiBoost, Hair Care Brand</p>
             <div className="pt-4">
@@ -64,7 +64,7 @@ export default function CaseStudy() {
                 </div>
                 <div>
                   <p className="text-gray-600 text-sm">After</p>
-                  <p className="text-2xl font-bold text-convert">$33 CPA</p>
+                  <p className="text-2xl font-bold text-convert">$28 CPA</p>
                 </div>
               </div>
               <p className="text-gray-600">
@@ -72,13 +72,19 @@ export default function CaseStudy() {
                 Result? A  <span className="text-convert text-[17px] font-bold">35% lift in ROI</span>— all without touching ad spend.
               </p>
             </div>
-            <motion.button
-              whileHover={{ scale: 1.05, x: 5 }}
-              whileTap={{ scale: 0.95 }}
-              className="text-red-700 font-medium flex items-center gap-2"
+            <a
+              href="/BondiBoost_CaseStudy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Read the full case study <ArrowRight size={16} />
-            </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05, x: 5 }}
+                whileTap={{ scale: 0.95 }}
+                className="text-red-700 font-medium flex items-center gap-2"
+              >
+                Read the full case study <ArrowRight size={16} />
+              </motion.button>
+            </a>
           </motion.div>
         </div>
       </div>

@@ -133,7 +133,7 @@ export default function SocialProof() {
               />
               <div>
                 <p className="font-medium text-gray-900">Sarah Johnson</p>
-                <p className="text-gray-600 text-sm">CMO, TechCorp</p>
+                <p className="text-gray-600 text-sm">CMO, WPALive</p>
               </div>
             </div>
           </motion.div>
