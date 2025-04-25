@@ -81,7 +81,7 @@ export default function Hero() {
             }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="relative px-8 py-4 bg-main text-white font-medium rounded-lg flex items-center justify-center gap-2 transition-all duration-100 overflow-hidden group"
+            className="relative px-8 py-4 w-full bg-main text-white font-medium rounded-lg flex items-center justify-center gap-2 transition-all duration-100 overflow-hidden group"
           >
             <span className="z-10">Book a Strategy Call</span>
             <ArrowRight size={18} className="z-10" />

@@ -16,13 +16,13 @@ export default function CoreOffer() {
       icon: <Video className="w-10 h-10 text-convert" />,
       title: "TOFU Video Ads & Trust Content",
       description: "Scroll-stopping creative that captures attention and builds trust with your target audience.",
-       link:"/portfolio_ash"
+       link:"/BondiBoost_CaseStudy.pdf"
     },
     {
       icon: <Layout className="w-10 h-10 text-convert" />,
       title: "Landing Page Revamps & Performance Hooks",
       description: "Conversion-focused design and copy that turns visitors into customers.",
-        link:"/portfolio_fahad"
+       link:"/BondiBoost_CaseStudy.pdf"
     },
   ]
 
