@@ -70,7 +70,7 @@ export default function SocialProof() {
               className=" transition-all duration-300"
             >
               <Image
-                src="/logo (1).png"
+                src="/lilash.jpeg"
                 alt="BondiBoost"
                 width={150}
                 height={80}
@@ -96,7 +96,7 @@ export default function SocialProof() {
               className=" transition-all duration-300"
             >
               <Image
-                src="/logo (3).png"
+                src="/logo (4).png"
                 alt="BondiBoost"
                 width={150}
                 height={80}

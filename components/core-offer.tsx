@@ -16,13 +16,13 @@ export default function CoreOffer() {
       icon: <Video className="w-10 h-10 text-convert" />,
       title: "TOFU Video Ads & Trust Content",
       description: "Scroll-stopping creative that captures attention and builds trust with your target audience.",
-       link:"/BondiBoost_CaseStudy.pdf"
+       link:"https://drive.google.com/drive/folders/1YPo6eKeUhgi7Y00pW8kmrRtbxA4fNPRP?usp=sharing"
     },
     {
       icon: <Layout className="w-10 h-10 text-convert" />,
       title: "Landing Page Revamps & Performance Hooks",
       description: "Conversion-focused design and copy that turns visitors into customers.",
-       link:"/BondiBoost_CaseStudy.pdf"
+       link:"https://drive.google.com/drive/folders/1YPo6eKeUhgi7Y00pW8kmrRtbxA4fNPRP?usp=sharing"
     },
   ]
 
@@ -97,6 +97,12 @@ export default function CoreOffer() {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
+          <a
+           href="Our-Process.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full"
+          >
           <motion.button
             whileHover={{
               scale: 1.05,
@@ -109,6 +115,7 @@ export default function CoreOffer() {
             See Full Process
             <ArrowRight size={18} />
           </motion.button>
+          </a>
         </motion.div>
       </div>
     </div>

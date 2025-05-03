@@ -98,6 +98,11 @@ export default function CTA() {
                 <span className="text-gray-700">Case studies and results</span>
               </li>
             </ul>
+            <a
+            href="Our-Offer.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -106,6 +111,7 @@ export default function CTA() {
               View Offer
               <ArrowRight size={18} />
             </motion.button>
+            </a>
           </motion.div>
         </div>
       </div>

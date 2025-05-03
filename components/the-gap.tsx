@@ -128,7 +128,11 @@ export default function TheGap() {
                 </div>
               </div>
             </div>
-
+             <a
+            href="Our-Process.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.button
               whileHover={{ scale: 1.05, x: 5 }}
               whileTap={{ scale: 0.95 }}
@@ -136,6 +140,7 @@ export default function TheGap() {
             >
               Learn more about our process <ArrowRight size={16} />
             </motion.button>
+            </a>
           </motion.div>
         </div>
       </div>

@@ -37,25 +37,18 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <li className="text-gray-400 transition-colors">
+               
                   Buyer Journey Audit
-                </Link>
               </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <li className="text-gray-400 transition-colors">
                   Video Ads & Content
-                </Link>
               </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <li className="text-gray-400 transition-colors">
                   Landing Page Revamps
-                </Link>
               </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <li className="text-gray-400 transition-colors">
                   Full Funnel Strategy
-                </Link>
               </li>
             </ul>
           </div>
