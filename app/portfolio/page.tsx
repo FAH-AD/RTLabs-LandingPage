@@ -126,7 +126,7 @@ export default function PortfolioPage() {
             variants={container}
             initial="hidden"
             animate="show"
-            className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem]"
           >
             {filteredProjects.map((project) => (
               <motion.div
@@ -152,22 +152,34 @@ export default function PortfolioPage() {
                     </div>
 
                     {/* Overlay Gradient - Only for hover effect */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c1220]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c1220]/90 via-[#0c1220]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                    {/* View Project Button - Only appears on hover */}
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{
-                        opacity: hoveredProject === project.id ? 1 : 0,
-                        y: hoveredProject === project.id ? 0 : 10,
-                      }}
-                      transition={{ duration: 0.3 }}
-                      className="absolute bottom-4 right-4 bg-main text-white text-sm font-medium px-3 py-1.5 rounded-md inline-flex items-center"
-                    >
-                      View Project <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
-                    </motion.div>
+                    {/* Content that appears on hover */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
+                      <AnimatePresence>
+                        {hoveredProject === project.id && (
+                          <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 20 }}
+                            transition={{ duration: 0.3 }}
+                          >
+                            {/* View Project Button */}
+                            <motion.div
+                              className="bg-main text-white text-sm font-medium px-4 py-2 rounded-md inline-flex items-center mb-4"
+                              whileHover={{ scale: 1.05 }}
+                              transition={{ duration: 0.2 }}
+                            >
+                              View Project <ArrowRight className="ml-2 h-4 w-4" />
+                            </motion.div>
+
+                            {/* Project Description */}
+                            <p className="text-sm text-white/90 leading-relaxed">{project.shortDescription}</p>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
                   </div>
-
                   {/* Project Info - Below the image */}
                   <div className="relative">
                     {/* Creative Title with Underline Animation */}
@@ -187,22 +199,7 @@ export default function PortfolioPage() {
                       </motion.h3>
                     </div>
 
-                    {/* Short Description */}
-                    <p className="text-sm text-gray-300 line-clamp-2">{project.shortDescription}</p>
-
-                    {/* Technologies Pills - Show first 3 */}
-                    <div className="flex flex-wrap gap-1.5 mt-3">
-                      {project.technologies.slice(0, 3).map((tech, index) => (
-                        <span key={index} className="text-xs bg-[#131c2e] text-gray-300 px-2 py-0.5 rounded-full">
-                          {tech}
-                        </span>
-                      ))}
-                      {project.technologies.length > 3 && (
-                        <span className="text-xs bg-[#131c2e] text-gray-300 px-2 py-0.5 rounded-full">
-                          +{project.technologies.length - 3}
-                        </span>
-                      )}
-                    </div>
+                    
                   </div>
                 </Link>
               </motion.div>
