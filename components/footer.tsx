@@ -28,7 +28,10 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.linkedin.com/company/redthreadlabs"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </Link>
             </div>
