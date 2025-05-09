@@ -9,9 +9,10 @@ interface NavbarProps {
     name: string
     ref: React.RefObject<HTMLDivElement | null>
   }[]
+  isComplete: boolean
 }
 
-export default function Navbar({ sections }: NavbarProps ) {
+export default function Navbar({ sections, isComplete }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -54,44 +55,48 @@ export default function Navbar({ sections }: NavbarProps ) {
           </span>
         </motion.div>
 
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="p-2 rounded-md focus:outline-none text-white"
-        >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        {isComplete && (
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="p-2 rounded-md focus:outline-none text-white"
+          >
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        )}
       </div>
 
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.4 }}
-            className="bg-gradient-to-br from-gray-900 to-black text-white shadow-lg"
-          >
-            <motion.ul
-              initial={{ y: -10 }}
-              animate={{ y: 0 }}
-              exit={{ y: -10 }}
-              className="flex flex-col items-center space-y-4 py-6"
+      {isComplete && (
+        <AnimatePresence>
+          {menuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.4 }}
+              className="bg-gradient-to-br from-gray-900 to-black text-white shadow-lg"
             >
-              {sections.map((section, index) => (
-                <motion.li
-                  key={section.name}
-                  onClick={() => handleScrollTo(section.ref)}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.3, delay: 0.05 * index }}
-                  className="text-lg font-medium cursor-pointer hover:text-main transition-colors"
-                >
-                  {section.name}
-                </motion.li>
-              ))}
-            </motion.ul>
-          </motion.div>
-        )}
-      </AnimatePresence>
+              <motion.ul
+                initial={{ y: -10 }}
+                animate={{ y: 0 }}
+                exit={{ y: -10 }}
+                className="flex flex-col items-center space-y-4 py-6"
+              >
+                {sections.map((section, index) => (
+                  <motion.li
+                    key={section.name}
+                    onClick={() => handleScrollTo(section.ref)}
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3, delay: 0.05 * index }}
+                    className="text-lg font-medium cursor-pointer hover:text-main transition-colors"
+                  >
+                    {section.name}
+                  </motion.li>
+                ))}
+              </motion.ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      )}
     </motion.header>
   )
 }

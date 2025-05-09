@@ -22,7 +22,7 @@ export default function CoreOffer() {
       icon: <Layout className="w-10 h-10 text-convert" />,
       title: "Landing Page Revamps & Performance Hooks",
       description: "Conversion-focused design and copy that turns visitors into customers.",
-       link:"https://drive.google.com/drive/folders/1YPo6eKeUhgi7Y00pW8kmrRtbxA4fNPRP?usp=sharing"
+       link:"/portfolio"
     },
   ]
 
@@ -78,8 +78,8 @@ export default function CoreOffer() {
               <p className="text-gray-600 mb-6">{service.description}</p>
               <a
               href={service.link}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={index < 2 ? "_blank" : ""}
+              rel={index < 2 ? "noopener noreferrer" : ""}
             >
               <motion.div whileHover={{ x: 5,   }} className="text-red-700 font-medium flex hover:cursor-pointer items-center gap-2">
                 Learn more <ArrowRight size={16} />

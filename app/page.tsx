@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden">
-      <Navbar sections={sections} />
+      <Navbar sections={sections} isComplete={true} />
 
       <section ref={heroRef}>
         <Hero />
