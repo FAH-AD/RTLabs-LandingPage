@@ -82,7 +82,7 @@ export default function PortfolioPage() {
 
       
       
-      <section className="py-20 px-4 pt-[12rem] md:px-6 lg:px-8 ">
+      <section className="py-20 px-4 pt-[5rem] md:pt-[12rem] md:px-6 lg:px-8 ">
       <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -92,7 +92,7 @@ export default function PortfolioPage() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center text-white font-bold hover:text-main transition-colors"
+              className="flex items-center text-white mb-4 text-sm font-[500] md:font-bold md:mb-0 hover:text-main transition-colors"
             >
               <ArrowLeft className="mr-2" size={20} />
               Back to Home

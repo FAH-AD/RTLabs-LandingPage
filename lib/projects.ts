@@ -34,26 +34,7 @@ export interface Project {
     },
   
     // NEW PROJECT 2
-    {
-      id: "nexplus",
-      title: "NextPlus",
-      description:
-        "NextPlus is a federal contracting partner offering IT and logistics solutions to government agencies and enterprises.",
-      shortDescription: "IT and logistics solutions for federal contracts",
-      category: "Enterprise Solutions",
-      link: "https://nextplus.org",
-      image: "/portfolio_images/np-main.png",
-      images: [
-        "/portfolio_images/np-1.png",
-        "/portfolio_images/np-2.png",
-        "/portfolio_images/np-main.png",
-      ],
-      problem: "The NextPlus team required a scalable portal to support their federal IT and logistics contracts. They needed real-time visibility into procurement, inventory, and SLA performance, while ensuring compliance with government standards.",
-
-      solution:
-        "NextPlus offers a robust digital infrastructure tailored for federal supply chains, integrating logistics tracking, inventory management, compliance automation, and service fulfillment. Our team built a scalable B2G portal with real-time visibility, procurement automation, and end-to-end SLA tracking — accelerating agency workflows while ensuring complete federal compliance.",
-      technologies: ["Next.js", "TypeScript", "MongoDB", "Azure", "Jira API"],
-    },
+    
   
     // NEW PROJECT 3
     {
@@ -193,6 +174,26 @@ export interface Project {
       solution:
         "Created an accessible investment platform with a range of financial products, educational resources, and portfolio management tools. The platform features risk assessment, investment recommendations, and performance tracking. The user-friendly interface makes investing approachable for beginners while offering advanced features for experienced investors.",
       technologies: ["React", "Redux", "Node.js", "MongoDB", "Plaid API", "Chart.js"],
+    },
+    {
+      id: "nexplus",
+      title: "NextPlus",
+      description:
+        "NextPlus is a federal contracting partner offering IT and logistics solutions to government agencies and enterprises.",
+      shortDescription: "IT and logistics solutions for federal contracts",
+      category: "Enterprise Solutions",
+      link: "https://nextplus.org",
+      image: "/portfolio_images/np-main.png",
+      images: [
+        "/portfolio_images/np-1.png",
+        "/portfolio_images/np-2.png",
+        "/portfolio_images/np-main.png",
+      ],
+      problem: "The NextPlus team required a scalable portal to support their federal IT and logistics contracts. They needed real-time visibility into procurement, inventory, and SLA performance, while ensuring compliance with government standards.",
+
+      solution:
+        "NextPlus offers a robust digital infrastructure tailored for federal supply chains, integrating logistics tracking, inventory management, compliance automation, and service fulfillment. Our team built a scalable B2G portal with real-time visibility, procurement automation, and end-to-end SLA tracking — accelerating agency workflows while ensuring complete federal compliance.",
+      technologies: ["Next.js", "TypeScript", "MongoDB", "Azure", "Jira API"],
     },
     
   ]
