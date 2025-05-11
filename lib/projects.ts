@@ -20,7 +20,7 @@ export interface Project {
       description: "A comprehensive platform for real estate property management and investor engagement",
       shortDescription: "Real estate management and investor engagement platform",
       category: "Real Estate Platform",
-      image: "/portfolio_images/estatein-main.png",
+      image: "/portfolio_images/estatein-1.png",
       images: [
         "/portfolio_images/estatein-1.png",
         "/portfolio_images/estatein-2.png",

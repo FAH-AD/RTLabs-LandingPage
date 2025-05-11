@@ -41,17 +41,36 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               <li className="text-gray-400 transition-colors">
-               
+                  <Link href="/FunnelAudit.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="text-gray-400 hover:text-white transition-colors">
                   Buyer Journey Audit
+                  </Link>
               </li>
               <li className="text-gray-400 transition-colors">
+
+                <Link href="https://drive.google.com/drive/folders/1YPo6eKeUhgi7Y00pW8kmrRtbxA4fNPRP?usp=sharing"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="text-gray-400 hover:text-white transition-colors">
                   Video Ads & Content
+                  </Link>
               </li>
               <li className="text-gray-400 transition-colors">
+               <Link href="portfolio"
+              
+               className="text-gray-400 hover:text-white transition-colors">
                   Landing Page Revamps
+                  </Link>
               </li>
               <li className="text-gray-400 transition-colors">
+                 <Link href="/Our-Process.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="text-gray-400 hover:text-white transition-colors">
                   Full Funnel Strategy
+                  </Link>
               </li>
             </ul>
           </div>

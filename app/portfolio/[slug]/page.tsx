@@ -319,7 +319,7 @@ export default function ProjectPage({ params }: { params: Promise<Params> }) {
               </motion.button>
             </a>
               <a
-           href="Our-Process.pdf"
+           href="/Our-Process.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

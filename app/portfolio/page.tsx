@@ -143,7 +143,7 @@ export default function PortfolioPage() {
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-cover  transition-transform duration-500 group-hover:scale-110"
                     />
 
                     {/* Category Tag */}
@@ -152,7 +152,7 @@ export default function PortfolioPage() {
                     </div>
 
                     {/* Overlay Gradient - Only for hover effect */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c1220]/90 via-[#0c1220]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c1220]/60 via-[#0c1220]/60 to-[#0c1220]/40 opacity-100 group-hover:opacity-100 transition-opacity duration-300" />
 
                     {/* Content that appears on hover */}
                     <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
